@@ -93,21 +93,23 @@ header-includes:
 
 ### на Julia
 
+![image](image/17.PNG)
+
 ![image](image/2.png)
 
-![image](image/3.PNG)
+![image](image/3.png)
 
-![image](image/4.PNG)
+![image](image/4.png)
 
-![image](image/5.PNG)
+![image](image/5.png)
 
-![image](image/6.PNG)
+![image](image/6.png)
 
-![image](image/7.PNG)
-
-![image](image/8.PNG)
+![image](image/7.png)
 
 ### на OpenModelica
+
+![image](image/8.PNG)
 
 ![image](image/9.PNG)
 
