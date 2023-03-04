@@ -125,7 +125,7 @@ header-includes:
 
 ![image](image/15.PNG)
 
-
+![image](image/16.PNG)
 
 # Выводы
 
