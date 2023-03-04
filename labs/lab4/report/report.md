@@ -93,7 +93,7 @@ header-includes:
 
 ### на Julia
 
-![image](image/2.PNG)
+![image](image/2.png)
 
 ![image](image/3.PNG)
 
