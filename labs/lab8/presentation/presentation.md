@@ -59,20 +59,15 @@ header-includes:
 
 ![](./image/4.PNG)
 
-![](./image/5.PNG)
-
 создали программу на OpenModelica, моделидующую ход распространения рекламы при заданных условиях
 
-![](./image/6.PNG)
+![](./image/5.PNG)
 
 получили графики
 
+![](./image/6.PNG)
+
 ![](./image/7.PNG)
-
-![](./image/8.PNG)
-
-![](./image/9.PNG)
-
 
 ## Вывод 
 
