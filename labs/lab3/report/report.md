@@ -1,109 +1,51 @@
----
-## Front matter
-title: "Отчет по лабораторной работе № 3"
-subtitle: "По дисциплине Математическое Моделирование"
-author: "Максимов Алексей Александрович"
 
-## Generic otions
-lang: ru-RU
-toc-title: "Содержание"
+# Отчет по лабораторной работе № 3
 
-## Bibliography
-bibliography: bib/cite.bib
-csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
+## По дисциплине Информационная безопасность
 
-## Pdf output format
-toc: true # Table of contents
-toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
-fontsize: 12pt
-linestretch: 1.5
-papersize: a4
-documentclass: scrreprt
-## I18n polyglossia
-polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
-polyglossia-otherlangs:
-  name: english
-## I18n babel
-babel-lang: russian
-babel-otherlangs: english
-## Fonts
-mainfont: PT Serif
-romanfont: PT Serif
-sansfont: PT Sans
-monofont: PT Mono
-mainfontoptions: Ligatures=TeX
-romanfontoptions: Ligatures=TeX
-sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
-monofontoptions: Scale=MatchLowercase,Scale=0.9
-## Biblatex
-biblatex: true
-biblio-style: "gost-numeric"
-biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
-## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
-## Misc options
-indent: true
-header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
----
+### Выполнил: Максимов Алексей Александрович
+### Группа: НПИ-бд-01-20
+
+  #### Российский Университет Дружбы Народов
+  #### г. Москва
 
 
 # Цель работы
 
-Ознакомиться с языком программирования Julia и OpenModelica. 
+Получение практических навыков работы в консоли с атрибутами файлов для групп пользователей.
 
 # Задание
 
-![image](image/1.PNG)
-
-# Теоретическое введение
-
-Рассмотрим некоторые простейшие модели боевых действий – модели
-Ланчестера. В противоборстве могут принимать участие как регулярные войска,
-так и партизанские отряды. В общем случае главной характеристикой соперников
-являются численности сторон. Если в какой-то момент времени одна из
-численностей обращается в нуль, то данная сторона считается проигравшей (при
-условии, что численность другой стороны в данный момент положительна).
+Выполнить задания по дискреционному разграничению прав в Linux.
 
 # Выполнение лабораторной работы
+### Создаем пользователя guest2 и добавляем его в группу guest
 
-### Произвели рассчеты аналогичные приведенному заданию
-В результате вычислили, что в первом случае войска У достигнут нуля за примерно 1,6 ед. времени, а во втором случае за прмерно 2,2 ед. времени
-Написали программу, которая показывает на графике обе армии в двух случаях
 
-### на Julia
+![image](image/1.PNG)
+
+![image](image/4.PNG)
+
+### Осуществляем вход в систему от двух пользователей на двух разных консолях: guest на первой консоли и guest2 на второй консоли.
+
+Уточняем имя наших пользователей, их группу, кто входит в неёи к каким группам принадлежат они сами.
+
 
 ![image](image/2.PNG)
 
 ![image](image/3.PNG)
 
-### на OpenModelica
-
-![image](image/4.PNG)
+### От имени пользователя guest снимаем с директории /home/guest/dir1 все атрибуты и проверяем коррекстность снятия атрибутов
 
 ![image](image/5.PNG)
+
+### Заполняем таблицы
+
+![image](image/6.PNG)
+
+![image](image/7.PNG)
 
 
 # Выводы
 
-Решили задачу и написали прогррамму, а также познакомились с Julia и OpenModelica
-
+Получили практические навыки работы в консоли с атрибутами файлов для групп пользователей.
