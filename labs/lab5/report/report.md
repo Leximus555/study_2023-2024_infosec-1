@@ -1,108 +1,66 @@
----
-## Front matter
-title: "Отчет по лабораторной работе № 5"
-subtitle: "По дисциплине Математическое Моделирование"
-author: "Максимов Алексей Александрович"
 
-## Generic otions
-lang: ru-RU
-toc-title: "Содержание"
+# Отчет по лабораторной работе № 5
 
-## Bibliography
-bibliography: bib/cite.bib
-csl: pandoc/csl/gost-r-7-0-5-2008-numeric.csl
+## По дисциплине Информационная безопасность
 
-## Pdf output format
-toc: true # Table of contents
-toc-depth: 2
-lof: true # List of figures
-lot: true # List of tables
-fontsize: 12pt
-linestretch: 1.5
-papersize: a4
-documentclass: scrreprt
-## I18n polyglossia
-polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
-polyglossia-otherlangs:
-  name: english
-## I18n babel
-babel-lang: russian
-babel-otherlangs: english
-## Fonts
-mainfont: PT Serif
-romanfont: PT Serif
-sansfont: PT Sans
-monofont: PT Mono
-mainfontoptions: Ligatures=TeX
-romanfontoptions: Ligatures=TeX
-sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
-monofontoptions: Scale=MatchLowercase,Scale=0.9
-## Biblatex
-biblatex: true
-biblio-style: "gost-numeric"
-biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
-## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
-## Misc options
-indent: true
-header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
----
+### Выполнил: Максимов Алексей Александрович
+### Группа: НПИ-бд-01-20
+
+  #### Российский Университет Дружбы Народов
+  #### г. Москва
 
 
 # Цель работы
 
-Ознакомиться с языком программирования Julia и OpenModelica и решить задачу о жертвах и хищниках. 
+Изучение механизмов изменения идентификаторов, применения SetUID- и Sticky-битов. Получение практических навыков работы в консоли с дополнительными атрибутами. Рассмотрение работы механизма смены идентификатора процессов пользователей, а также влияние бита Sticky на запись и удаление файлов.
 
-# Задание
-
-![image](image/1.PNG)
-
-# Теоретическое введение
-
-Простейшая модель взаимодействия двух видов типа «хищник — жертва» - модель Лотки-Вольтерры. Данная двувидовая модель основывается на следующих предположениях:
-1. Численность популяции жертв x и хищников y зависят только от времени (модель не учитывает пространственное распределение популяции на занимаемой территории)
-2. В отсутствии взаимодействия численность видов изменяется по модели Мальтуса, при этом число жертв увеличивается, а число хищников падает
-3. Естественная смертность жертвы и естественная рождаемость хищника считаются несущественными
-4. Эффект насыщения численности обеих популяций не учитывается
-5. Скорость роста численности жертв уменьшается пропорционально численности хищников
+# Ход работы
 
 # Выполнение лабораторной работы
+### Создаем программу simpleid, компилируем и проверяем верность выведенных данных
 
-### на Julia
+![](image/1.PNG)
 
-![image](image/2.PNG)
 
-![image](image/3.PNG)
+![](image/2.PNG)
 
-![image](image/4.PNG)
+### Создаем программу simpleid2, компилируем и проверяем верность выведенных данных, меняем владельца файла
 
-### на OpenModelica
+![](image/3.PNG)
 
-![image](image/5.PNG)
 
-![image](image/6.PNG)
+![](image/4.PNG)
 
-![image](image/7.PNG)
+
+
+![](image/5.PNG)
+
+
+![](image/6.PNG)
+
+###  Создаем программу simpleid2, компилируем, меняем владельца файла
+возниклас проблема с пониманием синтаксиса активации программы
+
+![](image/7.PNG)
+
+![](image/8.PNG)
+
+![](image/9.PNG)
+
+### Исследование Sticky-бита
+#### проверяем наличие t атрибута на папке tmp, создаем файл в папке от пользователя 1 и пытаемся работать с ним от пользователя 2
+
+![](image/10.PNG)
+
+![](image/14.PNG)
+
+#### Затем убираем атрибут t и повторяем действия
+
+![](image/12.PNG)
+
+![](image/13.PNG)
+
 
 # Выводы
 
-Решили задачу и написали прогррамму на Julia и OpenModelica
-
+Изучили механизмы изменения идентификаторов. Получили практические навыки работы в консоли с дополнительными атрибутами. Рассмотрели работы механизма смены идентификатора процессов пользователей, а также влияние бита Sticky на запись и удаление файлов.
